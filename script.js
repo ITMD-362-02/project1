@@ -1,15 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
     const form = document.getElementById('signup-form');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        const formData = new FormData(form);
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(form);
 
-        let message = 'Registration Successful!\n';
-        for (let pair of formData.entries()) {
-            message += `${pair[0]}: ${pair[1]}\n`;
-        }
-        console.log(message);
-        alert(message);
-    });
-});
+            let message = 'Registration successful!\n';
+            for (let pair of formData.entries()) {
+                message += `${pair[0]}: ${pair[1]}\n`;
+            }
+            console.log(message)
+            alert(message);
+        });
+    }
+};
