@@ -12,7 +12,7 @@ body {
   padding: 0;
 }
 
-header, main {
+header, main{
   padding-inline: 1rem;
   margin: 0 auto;
 }
@@ -23,16 +23,26 @@ header {
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   background: linear-gradient(45deg, #f52828, #3936fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  padding-block: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
 }
 
 h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  line-height: 1.8rem;
+}
+
+h3 {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -97,6 +107,10 @@ input[type="submit"]:hover {
 @media screen and (min-width: 768px) {
   header {
     padding-top: 0;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 
   main {
