@@ -1,7 +1,13 @@
+:root {
+  --primary-color: rgb(140, 26, 155);
+  --secondary-color: rgb(231, 227, 227);
+  --text-color: rgb(21, 31, 31);
+}
+
 body {
   font-family: montserrat, Arial, Helvetica, sans-serif;
-  background-color: rgb(21, 31, 31);
-  color: rgb(231, 227, 227);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
   margin: 0;
   padding: 0;
 }
@@ -54,15 +60,15 @@ input {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
-  background-color: #555555;
-  color: rgb(231, 227, 227);
+  background-color: #afafaf;
+  color: var(--text-color);
   border: none;
   box-sizing: border-box;
 }
 
 input[type="submit"] {
   margin-top: 0.5rem;
-  background-color: rgb(140, 26, 155);
+  background-color: var(--primary-color);
   font-family: montserrat, Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #fff;
@@ -74,6 +80,18 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: rgb(83, 15, 92);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(140, 26, 155);
+    --secondary-color: rgb(21, 31, 31);
+    --text-color: rgb(231, 227, 227);
+  }
+
+  input {
+    background-color: #555555;
+  }
 }
 
 @media screen and (min-width: 768px) {
