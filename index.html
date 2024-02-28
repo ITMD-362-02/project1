@@ -16,17 +16,21 @@
   </header>
   <main>
     <section id="signup">
-      <h2>Register</h2>
-      <form id="signup" action="null"></form>
+      <form id="signup" action="#null" autocomplete="on" method="post">
         <div>
-          <label for="name">Name: </label>
-          <input type="text" id="name" name="name" required>
+          <fieldset>
+            <h2>Register</h2>
+            <div class="fieldset-wrapper">
+              <label for="name">Name: </label>
+              <input type="text" id="name" name="name" placeholder="Jon Snow" required>
+            </div>
+            <div>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" placeholder="jsnow@project1.com" required>
+            </div>
+            <input type="submit" name="submit" id="submit" value="Sign up">
+          </fieldset>
         </div>
-        <div>
-          <label for="email">Email: </label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <button type="submit">Sign Up</button>
       </form>
     </section>
   </main>

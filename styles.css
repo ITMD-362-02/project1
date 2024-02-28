@@ -7,11 +7,7 @@ body {
 }
 
 header, main {
-  padding: 20px;
-}
-
-h1, h2 {
-  margin-top: 0;
+  padding-inline: 1rem;
 }
 
 h1 {
@@ -22,18 +18,24 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  padding: 10px;
+  padding: 3rem;
 }
 
 h2 {
   font-size: 1.3rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 form {
   padding: 0.6rem;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  padding: 1rem;
+  border-image: linear-gradient(45deg, #3936fc,  #f52828);
+  border-image-slice: 1;
+  border-width: 0.1rem;
 }
 
 label {
@@ -41,10 +43,7 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-button {
+input {
   font-family: montserrat, Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 10px;
@@ -56,7 +55,7 @@ button {
   box-sizing: border-box;
 }
 
-button {
+input[type="submit"] {
   margin-top: 0.5rem;
   background-color: rgb(140, 26, 155);
   font-family: montserrat, Arial, Helvetica, sans-serif;
@@ -68,13 +67,13 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+input[type="submit"]:hover {
   background-color: rgb(83, 15, 92);
 }
 
 @media screen and (min-width: 768px) {
   form {
-    width: 50%;
+    width: 35rem;
     margin: 0 auto;
   }
 }
