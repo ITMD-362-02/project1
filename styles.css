@@ -17,16 +17,21 @@ h1, h2 {
 h1 {
   text-align: center;
   font-size: 3rem;
-  font-weight: 700;
-  background: linear-gradient(45deg, #ff0000, #0000ff);
+  font-weight: bold;
+  background: linear-gradient(45deg, #f52828, #3936fc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   padding: 10px;
 }
 
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 form {
-  padding: 10px;
+  padding: 0.6rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -40,22 +45,31 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 button {
+  font-family: montserrat, Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
-  border: 1px solid #ccc;
+  background-color: #555555;
+  color: rgb(231, 227, 227);
+  border: none;
+  box-sizing: border-box;
 }
 
 button {
-  background-color: #007bff;
+  margin-top: 0.5rem;
+  background-color: rgb(140, 26, 155);
+  font-family: montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: #fff;
   border: none;
   cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: aqua;
+  background-color: rgb(83, 15, 92);
 }
 
 @media screen and (min-width: 768px) {
