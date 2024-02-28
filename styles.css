@@ -1,6 +1,6 @@
 :root {
   --primary-color: rgb(140, 26, 155);
-  --secondary-color: rgb(231, 227, 227);
+  --secondary-color: rgb(241, 241, 241);
   --text-color: rgb(21, 31, 31);
 }
 
@@ -60,7 +60,7 @@ input {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
-  background-color: #afafaf;
+  background-color: #cccccc;
   color: var(--text-color);
   border: none;
   box-sizing: border-box;
