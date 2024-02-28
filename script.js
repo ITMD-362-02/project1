@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (let pair of formData.entries()) {
             message += `${pair[0]}: ${pair[1]}\n`;
         }
+        console.log(message);
         alert(message);
     });
 });
